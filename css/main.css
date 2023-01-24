@@ -1,0 +1,224 @@
+/**Per a posar variables de colors */
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(/img/Background/171177.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/**Secció Header */
+
+.header {
+  margin: 2rem;
+  border: 5px solid #ddd;
+  height: 10rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  background-color: white;
+  align-self: center;
+  margin-left: 2rem;
+  height: 30%;
+  width: 20%;
+}
+
+/**Items del Nav */
+
+.Hnavegador {
+  display: flex;
+  align-items: flex-start;
+  margin: 2rem;
+  height: 60%;
+  width: 59%;
+  text-align: center;
+}
+.Nav-item {
+  border-radius: 5%;
+  margin: 0.5rem;
+  align-self: center;
+  background-color: white;
+  height: 30%;
+  width: 80%;
+  border: 10px solid #ddd;
+  font-family: "MinecraftiaRegular";
+  font-weight: normal;
+  font-style: normal;
+  font-style: oblique;
+}
+a {
+  text-decoration: none;
+}
+
+.form {
+  font-family: "MinecraftiaRegular";
+  font-weight: normal;
+  font-style: normal;
+  align-self: center;
+  color: black;
+}
+
+/**Acaba el header */
+
+/**Style & animation slider START*/
+
+.slider {
+  position: relative;
+  top: 30%;
+  left: 15%;
+  width: 67%;
+  height: 10%;
+  border: 10px solid #ddd;
+  overflow: hidden;
+  border-radius: 1%;
+}
+.Slides {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  animation: slide 15s infinite linear;
+}
+.carrusel {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-200%);
+  }
+}
+/**Style & animation slider END*/
+
+/**Start of classes */
+.class-container {
+  background-image: url(/img/Background/gridbackground.jfif);
+  padding: 2%;
+  border: 10px solid #ddd;
+  background-color: bisque;
+  display: grid;
+  margin-top: 4%;
+  margin-left: 11%;
+  height: 400rem;
+  width: 70%;
+  grid-template-columns: repeat(2, 15%);
+  grid-template-rows: repeat(3, auto);
+  gap: 1%;
+  word-wrap: break-word;
+}
+
+/**
+ * Child GRID START
+ */
+
+/**DESCRIPTIONS START */
+.desc {
+  grid-column: 2 / span 3;
+  border: 10px solid rgb(210, 210, 210);
+  border-radius: 1%;
+  background-color: white;
+}
+/**TEXT */
+.text {
+  font-family: "MinecraftiaRegular";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2vw;
+}
+/**TEXT */
+
+/**DESCRIPTIONS END */
+
+/**IMAGES START */
+.imgdesc {
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.firstimg-agr {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.firstimg-ali {
+  grid-column: 1 / 2;
+  grid-row: 6 / 7;
+}
+
+/**Background start */
+
+/**GRID CLASSES START */
+.classes {
+  align-self: center;
+  text-align: center;
+  height: 90%;
+  background-color: rgb(184, 183, 183);
+  border: 10px solid rgb(238, 236, 236);
+  font: 3em sans-serif;
+  grid-column: 1 / span 4;
+  font-family: "MinecraftiaRegular";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 5vw;
+}
+/**GRID CLASSES END */
+/**
+  * Child GRID END
+  */
+/**Descripcions END */
+/**End Of Classes */
+
+/**footer start */
+.info {
+  margin: 2rem;
+  border: 10px solid #ddd;
+  border-radius: 1%;
+  height: 11.5rem;
+}
+.footergrid {
+  display: grid;
+  height: 4rem;
+  grid-template-columns: repeat(5, 12%);
+  grid-template-rows: repeat(1, auto);
+  justify-content: center;
+  word-wrap: break-word;
+  gap: 5%;
+}
+
+/**FOOTER CHILD GRID START */
+.child {
+  justify-self: center;
+  border-radius: 5%;
+  margin: 1.5rem;
+  background-color: white;
+  height: fit-content;
+  width: fit-content;
+}
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+/**FOOTER CHILD GRID END */
+
+/**footer END */
